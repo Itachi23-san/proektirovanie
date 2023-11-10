@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PR3</title>
+</head>
+<body>
+<script>
+function lab2() {
+var n = document.forms["frm"].elements["N"].value.split(" ");
+var z = document.forms["frm"].elements["Z"].value;
+var count = 0;
+n.forEach(element => {
+if(element > z){
+element = z;
+count++;
+}
+document.writeln(element);
+});
+document.writeln("<br>Количество замен: " + count);
+}
+</script>
+<form id="frm">
+<input type="text" id="N" placeholder="n">
+<input type="text" id="Z" placeholder="z">
+<input type="button" onclick="lab2()" value="Отправить">
+</form>
+</body>
+</html>
