@@ -1,0 +1,42 @@
+<html>
+<head>
+    <body>
+        <script>        
+        function createObject(prop1, prop2, value1, value2) {
+            return {
+            [prop1]: value1,
+            [prop2]: value2,
+            Print(){
+            return `${prop1}: ${value1}, ${prop2}: ${value2} <br>`;
+            }
+            }
+
+            }
+            var Peoples = [
+            new createObject('Имя', 'Возраст', 'Даниил', 19),
+            new createObject('Имя', 'Возраст', 'Юрий', 19),
+            new createObject('Имя', 'Возраст', 'Ильшат', 18)
+            ];
+            var Book = [
+            new createObject('Название книги', 'Дата публикации', 'Карл Маркс Капитал', 2005),
+            new createObject('Название книги', 'Дата публикации', 'Шерлок Холмс', 2006),
+            new createObject('Название книги', 'Дата публикации', 'Гарри Поттер', 2007)
+            ];
+            var Cars = [
+            new createObject('Марка', 'Дата выпуска', 'Корвет', 1943),
+            new createObject('Марка','Дата выпуска', 'Матиз', 998),
+            new createObject('Марка','Дата выпуска', 'Галант', 2024)
+            ];
+                for(var i = 0; i < Peoples.length; i++){
+                document.writeln( Peoples[i].Print() + '<br>' + '<br>');
+                }
+                for(var i = 0; i < Book .length; i++){
+                document.writeln(Book[i].Print() + '<br>' + '<br>');
+                }
+                for(var i = 0; i < Cars.length; i++){
+                document.writeln(Cars[i].Print() + '<br>' + '<br>');
+                }
+        </script>
+    </body>
+</head>
+</html>
