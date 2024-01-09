@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<head></head> 
+<body> 
+    <script> 
+        var userAgent = navigator.userAgent; 
+        alert(userAgent); 
+        if(userAgent.indexOf('OPR') > -1){ 
+            var x = 10; 
+            var y = (x/2)+(x/5); 
+            document.write(y); 
+        } else if (userAgent.indexOf('Chrome') > -1){ 
+            var x = 10; 
+            var y = (x/2)+5; 
+            document.write(y); 
+        } else if (userAgent.indexOf('Firefox') > -1){ 
+            var x = 10; 
+            var y = x+5; 
+            document.write(y); 
+        } else { 
+            document.write('(('); 
+        } 
+    </script> 
+</body>
