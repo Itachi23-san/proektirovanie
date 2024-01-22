@@ -49,7 +49,7 @@
          }
         }
         class Veterinarian {
-            static treatAnimal(){ // без констукции(new) короче инициализация короче 
+            static treatAnimal(){
                 var animalName = document.forms['see'].elements['name'].value;
                 var animal = Animals.find(element => element.name == animalName);
                 document.writeln(`${animal.name} ест ${animal.food}, находится в ${animal.location}`);
